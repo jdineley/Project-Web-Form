@@ -1,0 +1,78 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20px;
+}
+input {
+  width: 200px;
+  padding: 8px 10px;
+}
+select {
+  height: 30px;
+}
+
+form {
+  width: 35%;
+  margin: 50px auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+form > div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+form > div > div {
+  flex-direction: row;
+}
+
+#email-validation,
+#country-validation,
+#zip-validation,
+#password-validation,
+#password-confirmation-validation {
+  max-width: 200px;
+  color: red;
+}
+
+form > div:first-child {
+  justify-content: end;
+  margin-bottom: 5px;
+}
+
+sup {
+  margin-left: 5px;
+}
+
+.active:invalid {
+  color: red;
+}
+
+#password-instruction {
+  width: 200px;
+}
+
+
+@media (max-width: 850px) {
+    form {
+        width: 60%;
+    }
+}
+@media (max-width: 650px) {
+    form {
+        width: 80%;
+    }
+}

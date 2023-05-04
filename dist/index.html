@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <title>Project Web Form</title>
+  </head>
+  <body>
+    <h1>Project Web Form</h1>
+    <form action="">
+      <div>
+        <p>required <sup>*</sup></p>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <div>
+          <div>
+            <input
+              type="email"
+              id="email"
+              required
+              aria-describedby="email-validation"
+            />
+            <div id="email-validation" class="inline-validation-message"></div>
+          </div>
+          <sup>*</sup>
+        </div>
+      </div>
+      <div>
+        <label for="country">Country:</label>
+        <div>
+          <div>
+            <select
+              name=""
+              id="country"
+              required
+              aria-describedby="country-validation"
+            >
+              <option value="" disabled selected hidden>
+                Choose a country
+              </option>
+              <option value="AR">Argentina</option>
+              <option value="BE">Belgium</option>
+              <option value="ES">Spain</option>
+              <option value="IE">Ireland</option>
+              <option value="JP">Japan</option>
+              <option value="MX">Mexico</option>
+              <option value="PT">Portugal</option>
+              <option value="TH">Thailand</option>
+              <option value="GB">United Kingdom</option>
+            </select>
+            <div
+              id="country-validation"
+              class="inline-validation-message"
+            ></div>
+          </div>
+          <sup>*</sup>
+        </div>
+      </div>
+      <div>
+        <label for="zip">Zip Code:</label>
+        <div>
+          <div>
+            <input
+              type="text"
+              id="zip"
+              required
+              aria-describedby="zip-validation"
+            />
+            <div id="zip-validation" class="inline-validation-message"></div>
+          </div>
+          <sup>*</sup>
+        </div>
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <div>
+          <div>
+            <input
+              type="password"
+              id="password"
+              required
+              minlength="8"
+              pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@£$%^&*]).{8,}$"
+              aria-describedby="password-validation"
+            />
+            <p id="password-instruction">
+              at least 8 characters, one capital letter and one special
+              character (!@£$%^&*)
+            </p>
+            <div
+              id="password-validation"
+              class="inline-validation-message"
+            ></div>
+          </div>
+          <sup>*</sup>
+        </div>
+      </div>
+      <div>
+        <label for="confirm-password">Confirm Password:</label>
+        <div>
+          <div>
+            <input
+              type="password"
+              id="confirm-password"
+              required
+              aria-describedby="password-confirmation-validation"
+            />
+            <div
+              id="password-confirmation-validation"
+              class="inline-validation-message"
+            ></div>
+          </div>
+          <sup>*</sup>
+        </div>
+      </div>
+      <button id="button">Submit</button>
+      <h2></h2>
+    </form>
+  </body>
+</html>
